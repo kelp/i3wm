@@ -31,8 +31,8 @@ font pango:Hack Nerd Font 9
 floating_modifier $mod
 
 # start a terminal
-#bindsym $mod+Return exec i3-sensible-terminal
-bindsym $mod+Return exec termite
+bindsym $mod+Return exec i3-sensible-terminal
+#bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -168,6 +168,17 @@ bindsym $mod+r mode "resize"
 # i3 gaps config
 gaps inner 4
 gaps outer 4
+
+# Colors generated from: https://thomashunter.name/i3-configurator/
+# Copied out of onedark vim theme
+# class                 border  bground text    indicator child_border
+client.focused          #61AFEF #285577 #ABB2BF #c678dd   #98C379
+client.focused_inactive #282C34 #5C6370 #ABB2BF #282C34   #5F676A
+client.unfocused        #282C34 #5C6370 #5C6370 #282C34   #282C34
+client.urgent           #2F343A #E06C75 #ABB2BF #E06C75   #E06C75
+client.placeholder      #282C34 #282C34 #ABB2BF #282C34   #282C34
+
+client.background       #FFFFFF
 
 # start compton to prevent screen tearing
 exec --no-startup-id compton --config $HOME/.config/i3/compton.conf -b
