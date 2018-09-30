@@ -1,0 +1,71 @@
+{
+	"icons": [ "awesome-fonts" ],
+	"defaults": {
+		"separator-block-width": 0,
+		"warning": {
+			"fg": "#002b36",
+			"bg": "#b58900"
+		},
+		"critical": {
+			"fg": "#002b36",
+			"bg": "#dc322f"
+		}
+	},
+	"cycle": [
+		{ "fg": "#282c34", "bg": "#98c379" },
+		{ "fg": "#282c34", "bg": "#61afef" }
+	],
+	"kernel": { "fg": "#abb2bf", "bg": "#4b5263" },
+	"date": { "fg": "#abb2bf", "bg": "#4b5263" },
+	"time": { "fg": "#282c34", "bg": "#e06c75" },
+	"dnf": {
+		"good": {
+			"fg": "#002b36",
+			"bg": "#859900"
+		}
+	},
+	"pacman": {
+		"good": {
+			"fg": "#002b36",
+			"bg": "#859900"
+		}
+	},
+	"battery": {
+		"charged": {
+			"fg": "#002b36",
+			"bg": "#859900"
+		},
+		"AC": {
+			"fg": "#002b36",
+			"bg": "#859900"
+		}
+	},
+	"weather": {
+		"cloud": {
+			"fg": "#abb2bf",
+			"bg": "#4b5263"
+		},
+		"clear": {
+			"fg": "#282c34",
+			"bg": "#e5c07b"
+		},
+		"snow": {
+			"fg": "#282c34",
+			"bg": "#abb2bf"
+		},
+		"rain": {
+			"fg": "#abb2bf",
+			"bg": "#4b5263"
+		}
+	},
+	"redshift": {
+		"day": {
+			"fg": "#282c34",
+			"bg": "#c678dd"
+		},
+		"night": {
+			"fg": "#abb2bf",
+			"bg": "#4b5263"
+		}
+	}
+}

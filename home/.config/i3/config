@@ -187,5 +187,5 @@ exec --no-startup-id redshift
 # finds out, if available)
 bar {
 	font pango:Hack Nerd Font 11
-        status_command /usr/bin/bumblebee-status -m kernel spacer:uptime uptime arch-update spacer:net traffic spacer:system cpu memory disk spotify weather amixer redshift date time -p uptime.text="uptime" net.text="net" system.text="system" weather.unit=imperial time.format="%H:%M" date.format="%Y-%m-%d" traffic.showname=False -t solarized-powerline
+        status_command /usr/bin/bumblebee-status -m kernel spacer:uptime uptime arch-update spacer:net traffic spacer:system cpu memory disk spotify weather amixer redshift date time -p uptime.text="uptime" net.text="net" system.text="system" weather.unit=imperial time.format="%H:%M" date.format="%Y-%m-%d" traffic.showname=False -t onedark-powerline
 }
