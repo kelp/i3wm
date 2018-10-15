@@ -202,7 +202,7 @@ bar {
     workspace_buttons no
     tray_output none
 	font pango:Hack Nerd Font 7
-        status_command /usr/bin/bumblebee-status -m weather spotify pulseaudio redshift brightness date time battery -p weather.unit=imperial time.format="%H:%M" date.format="%Y-%m-%d" -t onedark-powerline
+        status_command /usr/bin/bumblebee-status -m weather spotify pasink redshift brightness date time battery -p weather.unit=imperial time.format="%H:%M" date.format="%Y-%m-%d" -t onedark-powerline
 }
 
 bar {
