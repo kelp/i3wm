@@ -202,7 +202,7 @@ bar {
     workspace_buttons no
     tray_output none
 	font pango:Hack Nerd Font 7
-        status_command /usr/bin/bumblebee-status -m weather spotify pasink redshift brightness date time battery -p weather.unit=imperial time.format="%H:%M" date.format="%Y-%m-%d" -t onedark-powerline
+        status_command /usr/bin/bumblebee-status -m weather spotify pasink redshift brightness date time battery -p engine.workspacewheel=false weather.unit=imperial time.format="%H:%M" date.format="%Y-%m-%d" -t onedark-powerline
 }
 
 bar {
@@ -211,5 +211,6 @@ bar {
     tray_padding 0
     id bottom
 	font pango:Hack Nerd Font 7
-        status_command /usr/bin/bumblebee-status -m kernel spacer:uptime uptime arch-update spacer:net traffic nic cpu sensors memory disk -p uptime.text="up" net.text="net" time.format="%H:%M" date.format="%Y-%m-%d" traffic.showname=False -t onedark-powerline
+	#font pango:Font Awesome 5 Brands 7
+        status_command /usr/bin/bumblebee-status -m kernel spacer:uptime uptime arch-update spacer:net traffic nic cpu sensors memory disk -p engine.workspacewheel=false uptime.text="up" net.text="net" time.format="%H:%M" date.format="%Y-%m-%d" traffic.showname=False -t onedark-powerline
 }
