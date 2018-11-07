@@ -31,8 +31,8 @@ font pango:Hack Nerd Font 9
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
-#bindsym $mod+Return exec termite
+#bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -184,7 +184,7 @@ client.background       #FFFFFF
 exec --no-startup-id compton --config $HOME/.config/i3/compton.conf -b
 
 # set a background wallpaper
-exec_always --no-startup-id feh --bg-scale $HOME/.config/i3/arch-2560x1600.png
+exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/arch-linux-logo-binary-code-minimal.png
 
 # Fix background issue iteractions with i3-gaps and feh
 for_window [class=".*"] border pixel 4
