@@ -184,7 +184,8 @@ client.background       #FFFFFF
 exec --no-startup-id compton --config $HOME/.config/i3/compton.conf -b
 
 # set a background wallpaper
-exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/arch-linux-logo-binary-code-minimal.png
+#exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/arch-linux-logo-binary-code-minimal.png
+exec_always --no-startup-id feh --bg-max $HOME/.config/i3/the-great-wave.jpg
 
 # Fix background issue iteractions with i3-gaps and feh
 for_window [class=".*"] border pixel 4
