@@ -166,7 +166,7 @@ bindsym $mod+r mode "resize"
 
 # i3 gaps config
 gaps inner 4
-gaps outer 4
+gaps outer 2
 
 # Colors generated from: https://thomashunter.name/i3-configurator/
 # Copied out of onedark vim theme
