@@ -194,6 +194,7 @@ for_window [class=".*"] border pixel 4
 #hide_edge_borders both
 
 # start redshift to dim and change the display color temp after sunset
+# I'm now running this as a systemd user unit
 #exec --no-startup-id redshift
 
 # Start i3bar to display a workspace bar (plus the system information i3status
