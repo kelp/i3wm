@@ -93,8 +93,8 @@ bindsym $mod+a focus parent
 # focus the child container
 #bindsym $mod+d focus child
 
-# Define names for default workspaces for which we configure key bindings later on.
-# We use variables to avoid repeating the names in multiple places.
+# Define names for default workspaces for which we configure key bindings later
+# on.  We use variables to avoid repeating the names in multiple places.
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -135,7 +135,9 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit \
+shortcut. Do you really want to exit i3? This will end your X session.'  \
+-b 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -183,7 +185,6 @@ client.background       #FFFFFF
 exec --no-startup-id compton --config $HOME/.config/i3/compton.conf -b
 
 # set a background wallpaper
-#exec_always --no-startup-id feh --bg-fill $HOME/.config/i3/arch-linux-logo-binary-code-minimal.png
 exec_always --no-startup-id feh --bg-max $HOME/.config/i3/the-great-wave.jpg
 
 # Fix background issue iteractions with i3-gaps and feh, this disables
@@ -204,8 +205,12 @@ bar {
     id top
     workspace_buttons no
     tray_output none
-	font pango:Hack Nerd Font 7
-        status_command /usr/bin/bumblebee-status -m weather spotify pasink redshift brightness date time battery -p engine.workspacewheel=false weather.unit=imperial time.format="%H:%M" date.format="%Y-%m-%d" -t onedark-powerline
+	font pango:Hack Nerd Font 8
+	#font pango:Noto Sans Mono 9
+        status_command /usr/bin/bumblebee-status -m weather spotify pasink   \
+        redshift brightness date time battery -p engine.workspacewheel=false \
+        weather.unit=imperial time.format="%H:%M" date.format="%Y-%m-%d"     \
+        -t onedark-powerline
 }
 
 bar {
@@ -213,7 +218,12 @@ bar {
     tray_output primary
     tray_padding 0
     id bottom
-	font pango:Hack Nerd Font 7
+	font pango:Hack Nerd Font 8
+	#font pango:Noto Sans Mono 9
 	#font pango:Font Awesome 5 Brands 7
-        status_command /usr/bin/bumblebee-status -m kernel spacer:uptime uptime arch-update spacer:net traffic nic cpu sensors memory disk -p engine.workspacewheel=false uptime.text="up" net.text="net" time.format="%H:%M" date.format="%Y-%m-%d" traffic.showname=False -t onedark-powerline
+        status_command /usr/bin/bumblebee-status -m kernel spacer:uptime     \
+        uptime arch-update spacer:net traffic nic cpu sensors memory disk    \
+        -p engine.workspacewheel=false uptime.text="up" net.text="net"       \
+        time.format="%H:%M" date.format="%Y-%m-%d" traffic.showname=False    \
+        -t onedark-powerline
 }
