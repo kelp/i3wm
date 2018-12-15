@@ -223,7 +223,7 @@ bar {
 	#font pango:Font Awesome 5 Brands 7
         status_command /usr/bin/bumblebee-status -m kernel spacer:uptime     \
         uptime arch-update spacer:net traffic nic cpu sensors memory disk    \
-        -p engine.workspacewheel=false uptime.text="up" net.text="net"       \
-        time.format="%H:%M" date.format="%Y-%m-%d" traffic.showname=False    \
-        -t onedark-powerline
+        -p interval=60 engine.workspacewheel=false uptime.text="up"          \
+        net.text="net"  time.format="%H:%M" date.format="%Y-%m-%d"           \
+        traffic.showname=False -t onedark-powerline
 }
