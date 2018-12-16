@@ -205,12 +205,10 @@ bar {
     id top
     workspace_buttons no
     tray_output none
-	font pango:Hack Nerd Font 8
+	font pango:Hack Nerd Font 9
 	#font pango:Noto Sans Mono 9
-        status_command /usr/bin/bumblebee-status -m weather spotify pasink   \
-        redshift brightness date time battery -p engine.workspacewheel=false \
-        weather.unit=imperial time.format="%H:%M" date.format="%Y-%m-%d"     \
-        -t onedark-powerline
+        status_command /usr/bin/i3status-rs                                   \
+            $HOME/.config/i3status-rs/config-top.toml
 }
 
 bar {
@@ -218,12 +216,7 @@ bar {
     tray_output primary
     tray_padding 0
     id bottom
-	font pango:Hack Nerd Font 8
-	#font pango:Noto Sans Mono 9
-	#font pango:Font Awesome 5 Brands 7
-        status_command /usr/bin/bumblebee-status -m kernel spacer:uptime     \
-        uptime arch-update spacer:net traffic nic cpu sensors memory disk    \
-        -p interval=60 engine.workspacewheel=false uptime.text="up"          \
-        net.text="net"  time.format="%H:%M" date.format="%Y-%m-%d"           \
-        traffic.showname=False -t onedark-powerline
+	font pango:Hack Nerd Font 9
+        status_command /usr/bin/i3status-rs                                   \
+            $HOME/.config/i3status-rs/config-bottom.toml
 }
