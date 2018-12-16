@@ -1,0 +1,25 @@
+theme = "slick"
+icons = "awesome"
+
+[[block]]                                                                       
+block = "music"                                                                 
+player = "spotify"                                                              
+buttons = ["play", "next"] 
+
+[[block]]
+block = "backlight"
+
+[[block]]
+block = "sound"
+
+[[block]]
+block = "time"
+format = "%a %m/%d %R %Z"
+timezone = "US/Pacific"
+interval = 60
+
+[[block]]
+block = "battery"
+upower = true
+format = "{percentage}% {time} {power}W"
+
