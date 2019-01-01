@@ -214,7 +214,7 @@ bar {
 bar {
     position bottom
     tray_output primary
-    tray_padding 0
+    tray_padding 2
     id bottom
 	font pango:Hack Nerd Font 9
         status_command /usr/bin/i3status-rs                                   \
