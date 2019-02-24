@@ -220,3 +220,12 @@ bar {
         status_command /usr/bin/i3status-rs                                   \
             $HOME/.config/i3status-rs/config-bottom.toml
 }
+
+for_window [window_role="pop-up"] floating enable
+for_window [window_role="bubble"] floating enable
+for_window [window_role="task_dialog"] floating enable
+for_window [window_role="Preferences"] floating enable
+for_window [window_type="dialog"] floating enable
+for_window [window_type="menu"] floating enable
+for_window [title="File Upload"] floating disable
+popup_during_fullscreen smart
